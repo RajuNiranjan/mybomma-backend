@@ -11,7 +11,7 @@ const MovieUploadDataSchema = mongoose.Schema(
       required: true,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     zoner: {
@@ -26,11 +26,15 @@ const MovieUploadDataSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    trailer: {
+      type: String,
+      required: true,
+    },
     synopsis: {
       type: String,
       required: true,
     },
-    discription: {
+    description: {
       type: String,
       required: true,
     },
@@ -44,3 +48,12 @@ const MovieUploadData = mongoose.model(
 );
 
 export default MovieUploadData;
+;
+;
+;
+;
+;
+;
+;
+;
+;
