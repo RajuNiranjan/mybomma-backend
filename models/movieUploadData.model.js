@@ -11,7 +11,7 @@ const MovieUploadDataSchema = mongoose.Schema(
       required: true,
     },
     year: {
-      type: Numbe,
+      type: Number,
       required: true,
     },
     zoner: {

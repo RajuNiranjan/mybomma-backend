@@ -6,6 +6,8 @@ dotenv.config();
 
 const app = express();
 
+app.use(express.json());
+
 mongoose
   .connect(process.env.MONGO_DB)
   .then((e) => console.log("connected to MONGO_DB"))
