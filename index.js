@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import MovieUploadRouter from "./routes/movieUploadData.route.js";
-import GetMovieData from "./routes/getMovieData.route.js";
+
+import { router } from "./routes/movie.router.js";
 dotenv.config();
 
 const app = express();
@@ -22,7 +22,6 @@ app.listen(PORT, () => {
   console.log(`server is runnig at port number ${PORT}`);
 });
 
-app.use("/api", MovieUploadRouter);
-app.use("/api", GetMovieData);
+app.use("/api", router);
 
 app.options("/api/admin-dashboard", cors());

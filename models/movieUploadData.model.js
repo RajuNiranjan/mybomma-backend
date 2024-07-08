@@ -42,18 +42,6 @@ const MovieUploadDataSchema = mongoose.Schema(
   { timestamp: true }
 );
 
-const MovieUploadData = mongoose.model(
-  "MovieUploadData",
-  MovieUploadDataSchema
-);
+const MovieUploadModel = mongoose.model("Movie", MovieUploadDataSchema);
 
-export default MovieUploadData;
-;
-;
-;
-;
-;
-;
-;
-;
-;
+export default MovieUploadModel;
