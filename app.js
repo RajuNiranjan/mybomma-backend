@@ -31,7 +31,11 @@ app.listen(PORT, () => {
 app.use("/api", router);
 
 app.get("/", (req, res) => {
-  return res.status(200).json({ message: "Welcome to my bomma backend" });
+  try {
+    return res.status(200).json({ message: "Welcome to my bomma backend" });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.options("/api/admin-dashboard", cors());
