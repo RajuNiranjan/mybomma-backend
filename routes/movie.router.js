@@ -6,5 +6,5 @@ import {
 
 export const router = express.Router();
 
-router.post("/admin-dashboard", UploadMovie);
+router.post("/uploadMovie", UploadMovie);
 router.get("/getAllMovies", getMovieData);
