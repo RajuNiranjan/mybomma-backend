@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
   try {
     return res.status(200).json({ message: "Welcome to my bomma backend" });
   } catch (error) {
-    console.log(error);
+    console.log("error form app", error);
   }
 });
 
