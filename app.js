@@ -24,7 +24,7 @@ app.listen(PORT, () => {
 
 app.use("/api", router);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   return res.status(200).json({ message: "Welocome to my bomma backend" });
 });
 
